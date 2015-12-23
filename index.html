@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Salty.PW - Keep passwords safe. In your head.</title>
+    <meta name="description" content="Use an algorithmic trick to produce unique secure passwords for all your online accounts without having to remember or store them anywhere.">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="m/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="m/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="m/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="m/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="m/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="m/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="m/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="m/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="m/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="m/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="m/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="m/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="m/favicon-16x16.png">
+    <link rel="manifest" href="m/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="Salty.PW">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="m/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/sjcl.js"></script>
+    <script type="text/javascript" src="js/BigInt.js"></script>
+    <script type="text/javascript" src="js/salty.js"></script>
+
+    <meta property="og:title" content="Keep passwords safe. In your head." />
+    <meta property="og:url" content="https://salty.pw/" />
+    <meta property="og:image" content="https://salty.pw/img/head158.png" />
+    <meta property="og:description" content="Salty.PW lets you use an algorithmic trick to produce unique secure passwords for all your online accounts without having to remember or store them anywhere." />
+    
+
+  </head>
+  <body>
+    <div class="wrap">
+
+      <header>
+	<div class="container">
+	  <h1 id="top" class="text-center">Keep passwords safe. <span id="header-line-break"></span><img src="img/head.png" alt="Header image" class="header-image"> In your head.</h1>
+	</div>
+      </header>
+
+      <div id="main-content">
+	
+	<div id="main-content-1">
+	  <div class="container">
+	    <form name="passform">
+	      <div class="row" id="main-content-1-head">
+		<div id="spice-left" class="col-xs-12 col-sm-6 col-md-6">
+		  <input type="text" id="input-base-password" name="base" class="form-control center-block" placeholder="BASE PASSWORD">
+		</div>
+		<div id="spice-right" class="col-xs-12 col-sm-6 col-md-6">
+		  <input type="text" id="input-website-name" name="salt" class="form-control center-block" placeholder="SALT (WEBSITE NAME)">
+		</div>
+	      </div>
+	    </form>
+
+	    <div class="row" id="main-content-1-cols">
+	      <div class="col-xs-12 col-sm-4 col-md-4">
+		<p class="lead-left"><strong>Salty.PW</strong> lets you have unique secure passwords without having to remember or store them anywhere.</p>
+	      </div>
+	      <div class="col-xs-12 col-sm-4 col-md-4">
+		<div id="glass-background-image"></div>
+		<input type="text" id="input-generated-password" class="form-control" placeholder="GENERATED PASSWORD" readonly="">
+	      </div>
+	      <div class="col-xs-12 col-sm-4 col-md-4">
+		<p class="lead-right">All you need is a small space in your head for one password and the name of the website.</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="main-content-2">
+	  <div class="container">
+	    <span class="icon-lock icon-left"></span>
+	    <p class="text-center">
+	      First time here? Confused? Scroll down for explanation.
+	      <br>
+	      
+	    </p>
+	    <span class="icon-lock icon-right"></span>
+	  </div>
+	</div>
+	
+	<div id="main-content-3">
+	  <div class="container">
+	    <p class="text-center">
+	      We're willing to bet you now have more than 3 user accounts on the Web.
+	    </p>
+	    <p class="text-center">
+	      Once you start signing in to several websites, password management quickly becomes a challenge.
+	    </p>
+
+	    <div class="row">
+	      <div class="col-xs-12 col-sm-6 col-md-6">
+		<div class="list-head-box">
+		  <img class="display-inline" src="img/red-icon.png" alt="left image">
+		  <p class="display-inline">
+		    To maintain maximum security, you'd have<br> to remember several best practices, like:
+		  </p>
+		</div>
+		<ul id="list-dont">
+		  <li>Use different passwords for all online accounts.</li>
+		  <li>Use "strong passwords”. Meaning, it should consist of:<br>
+		    alphanumeric characters;<br>
+		    non-alphanumeric characters;<br>
+		    at least 8 characters</li>
+		  <li>Don't store passwords in one location.</li>
+		  <li>Don't post them in a conspicuous place.</li>
+		</ul>
+	      </div>
+	      <div class="col-xs-12 col-sm-6 col-md-6">
+		<div class="list-head-box">
+		  <img class="display-inline" src="img/blue-icon.png" alt="right image">
+		  <p class="display-inline">
+		    That's a lot of pointers to remember.<br> We think you really only need one:
+		  </p>
+		</div>
+		<ul id="list-do">
+		  <li><span class="main-blue" style="font-size:1.5em;">Use one (strong) password for everything.</span></li>
+		  <li>Use different passwords for all online accounts.</li>
+		  <li>Don't store passwords in one location.</li>
+		  <li>Don't post them in a conspicuous place.</li>
+		</ul>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <p> Sounds dangerous, doesn't it? Not if you combine that one "base" password with a website name and pass it through an irreversible function to generate a unique password just for that particular website. </p>
+	      <p>That generated password is what you'll enter into the password field when you login to reddit.com. Want to login to another website, say facebook.com? Just use the same base password and replace the website name with that of the new website, e.g. facebook.com.</p>
+	      <p>If you try that now, you'll see that Salty.PW will generate a password different from the previous one. You'll notice too that each generated password, which is always 10 characters long, consists of both alphanumeric and non-alphanumeric characters. Meaning, the passwords Satly.PW generates are always difficult to crack.</p>
+	      <p>Do you have to list down all those generated passwords in case you need to use them again? No. Nothing to store in a USB stick, a server in the cloud, or even a piece of paper. All you need
+		is a small space in your head for that one password, the name of the website, and Salty.PW. It's simple, quick, and extremely secure.</p>
+
+	    </div>
+
+	    <button id="button-try" class="center-block" onclick="scrollTo(0,0)"><span class="glyphicon glyphicon-arrow-up"></span> Try Salty.PW NOW</button>
+	    <div class="row">
+	      <h2>F.A.Q.</h2>
+	      <h3>Q: Do I still need a base password with digits, special characters and all that?</h3>
+	      <p>A: Kinda. Regardless of what your base password is, the generated password is immune to dictionary attacks <em>unless</em> the attacker is aware you are using Salty.PW. But while for most people that's an unlikely situation, it's better to be safe than sorry. Although instead of using digits and special characters we would recommend so called "XKCD passwords" (google it).</p>
+	      <h3>Q: Is my password sent anywhere?</h3>
+	      <p>A: No. All computations are done in your browser. Neither your base password, nor the salt, nor the result are transmitted to any servers.</p>
+	      <h3>Q: Why should I trust you that the above is true and will remain true in the future?</h3>
+	      <p>A: You shouldn't. Certainly not if your well-being depends on it. However, you can inspect the code  </p>
+
+	      <h3>Q: Once I started using Salty.PW am I bound to it forever? What happens if this site disappears one day?</h3>
+	      <p>A: You are bound to the algorithm (until you change your passwords), but not to this website. First of all, the site is completely static, so you can make a local copy using your browser's "Save as" function and use it from your local hard drive from now on. Second, the algorithm is very simple (see below) and can be implemented in most mainstream programming languages in a matter of minutes. Finally, the entire site source code is on GitHub and will likely remain available for as long as GitHub is around and will hopefully be cloned and copied many times before the author gets hit by a bus.
+	      </p>
+	      <h3>Q: What is the exact algorithm used by Salty.PW?</h3>
+	      <p>A: The base password and salt are concatenated together. Then a SHA-256 hash of the resulting string is computed. Finally, 128 most significant bits of the hash are converted to base 95 using the following alphabet:
+		<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_=!@#$%^&amp;*()[]{}|;:,.<>/?`~ \'"+-</code>
+	      </p>
+	    </div>
+	    
+	  </div>
+	</div>
+
+      </div>
+      
+      <footer>
+	<div class="footer-line"></div>
+	<p class="text-center">Developed in 2015. Free to modify and redistribute for any purpose.</p>
+	<div class="footer-line"></div>
+      </footer>
+    </div>
+
+</body></html>
