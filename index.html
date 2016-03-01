@@ -85,7 +85,7 @@
 	<div id="main-content-2">
 	  <div class="container">
 	    <span class="icon-lock icon-left"></span>
-	    <p class="text-center">
+	    <p class="text-center" style="font-size:24px;margin-top:10px;">
 	      First time here? Confused? Scroll down for explanation.
 	      <br>
 	      
@@ -139,9 +139,8 @@
 	    <div class="row">
 	      <p> Sounds dangerous, doesn't it? Not if you combine that one "base" password with a website name and pass it through an irreversible function to generate a unique password just for that particular website. </p>
 	      <p>That generated password is what you'll enter into the password field when you login to reddit.com. Want to login to another website, say facebook.com? Just use the same base password and replace the website name with that of the new website, e.g. facebook.com.</p>
-	      <p>If you try that now, you'll see that Salty.PW will generate a password different from the previous one. You'll notice too that each generated password, which is always 10 characters long, consists of both alphanumeric and non-alphanumeric characters. Meaning, the passwords Satly.PW generates are always difficult to crack.</p>
-	      <p>Do you have to list down all those generated passwords in case you need to use them again? No. Nothing to store in a USB stick, a server in the cloud, or even a piece of paper. All you need
-		is a small space in your head for that one password, the name of the website, and Salty.PW. It's simple, quick, and extremely secure.</p>
+	      <p>If you try that now, you'll see that Salty.PW will generate a password different from the previous one. You'll also notice that each generated password, which is always 10 characters long, consists of both alphanumeric and non-alphanumeric characters. Meaning, the passwords Satly.PW generates are always difficult to crack.</p>
+	      <p>Do you have to list down all those generated passwords in case you need to use them again? No. Nothing to store in a USB stick, a server in the cloud, or even a piece of paper. All you need is a small space in your head for that one password, the name of the website, and Salty.PW. It's simple, quick, and extremely secure.</p>
 
 	    </div>
 
@@ -153,7 +152,8 @@
 	      <h3>Q: Is my password sent anywhere?</h3>
 	      <p>A: No. All computations are done in your browser. Neither your base password, nor the salt, nor the result are transmitted to any servers.</p>
 	      <h3>Q: Why should I trust you that the above is true and will remain true in the future?</h3>
-	      <p>A: You shouldn't. Certainly not if your well-being depends on it. However, you can inspect the code  </p>
+	      <p>A: You shouldn't. Certainly not if your well-being depends on it. However, you can <a href="https://github.com/SaltyPW/SaltyPW.github.io" target="_blank">inspect the code</a> or trust others to have inspected it. Furthermore, this website is itself hosted on GitHub so any modifications will be visible in the public commit history<sup>*</sup>. And if you want to be 100% future-proof, you can just save a local copy using your browser's "Save as" function and use it instead of the site.</p>
+	      <p><small>* One caveat is that we still control the DNS records so we could mount an attack there. Although it would be easy to detect.</small></p>
 
 	      <h3>Q: Once I started using Salty.PW am I bound to it forever? What happens if this site disappears one day?</h3>
 	      <p>A: You are bound to the algorithm (until you change your passwords), but not to this website. First of all, the site is completely static, so you can make a local copy using your browser's "Save as" function and use it from your local hard drive from now on. Second, the algorithm is very simple (see below) and can be implemented in most mainstream programming languages in a matter of minutes. Finally, the entire site source code is on GitHub and will likely remain available for as long as GitHub is around and will hopefully be cloned and copied many times before the author gets hit by a bus.
